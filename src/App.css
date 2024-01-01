@@ -90,3 +90,54 @@ left: 2px;
 .card:hover{
   box-shadow: inset 0px 0px 50px 4px red;
 }
+
+.emptycart{
+   padding: 93px;
+    text-align: center;
+    width: 100%;
+    font-size: 23px;
+    font-weight: 900;
+}
+
+
+.button-66:hover {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+  .checkoutBtn{
+    padding: 5px 21px;
+    min-width: 150px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+    color: white;
+    background: black;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .checkoutdiv {
+    text-align: center;
+    width: 400px;
+    margin: 20px auto;
+    font-size: 20px;
+    font-weight: 600;
+    background: black;
+    padding: 50px;
+    color: white;
+    border-radius: 20px;
+}
+
+input[type='number']{
+  width: 50px;
+  margin: 0px 5px;
+  padding-left:2px;
+}
+
+.addbtn{
+  padding: 0px 5px;
+  color: white;
+  background: black;
+
+}

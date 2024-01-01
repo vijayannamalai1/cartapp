@@ -19,9 +19,9 @@ const Product = ({product}) => {
   return (
     <div className='card'>
       <p>{(product.title).slice(0,35)}</p>
-      <img src={product.image} />
-     <div><button onClick={()=>{addProductToCart()}}>Add</button><input type='number' min='1' value={quantity} onChange={(e)=>setQuantity(parseInt(e.target.value,10))}/></div>
-    <p>Price:{(product.price*quantity).toFixed(2)}</p>
+      <img src={product.image} alt={product.title}/>
+     <div><button className='addbtn' onClick={()=>{addProductToCart()}}>Add</button><input type='number' min='1' value={quantity} onChange={(e)=>setQuantity(parseInt(e.target.value,10))}/></div>
+    <p>Price: {(product.price*quantity).toFixed(2)} INR</p>
     </div>
   )
 }

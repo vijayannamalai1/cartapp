@@ -19,8 +19,10 @@ const CartProductList = () => {
   
   return (
     <div style={{margin:'20px'}}>
-        <h1 style={{textAlign:'center'}}>Products</h1>
-   {!cartProducts.length&&(<p>Your cart is empty</p>)}
+        <h1 style={{textAlign:'center'}}>Cart</h1>
+   {!cartProducts.length&&(<p className='emptycart'>Your cart is empty</p>)}
+
+  
          <div style={{display:'flex',justifyContent:'center',alignItems:'center', flexWrap:'wrap'}}>
         {cartProducts.map(product=>(
             
@@ -29,12 +31,12 @@ const CartProductList = () => {
             )
             )}
                </div>
-             {(cartProducts.length>0)&&<button className='checkout' onClick={handleCheckout}>Checkout</button>}
+             {(cartProducts.length>0)&&<button className='checkoutBtn' onClick={handleCheckout}>Checkout</button>}
              {totalPrice&&totalItems&&(
              
              <div className='checkoutdiv'>
                 <p>Total items: {totalItems}</p>
-                <p>Total Price:{(totalPrice).toFixed(2)}</p>
+                <p>Total Price: {(totalPrice).toFixed(2)} INR</p>
              </div>
              
              )}

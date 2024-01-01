@@ -9,4 +9,5 @@ font-family: 'Poppins', sans-serif;
 
 #root{
 background: linear-gradient(#ccffdd, #f4ff07,#ccffdd, #f4ff07);
+min-height: 120vh;
 }

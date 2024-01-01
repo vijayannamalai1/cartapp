@@ -6,8 +6,8 @@ const HeaderComp = () => {
     <div className='header'>
         <nav>
             <ul>
-            <li><Link to='/'>Products</Link></li>
-            <li><Link to='/cart'>Cart</Link></li>
+            <li><Link to='products'>Products</Link></li>
+            <li><Link to='cart'>Cart</Link></li>
             </ul>
             </nav>
     </div>

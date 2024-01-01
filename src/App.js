@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ProductList from './components/ProductList';
 import CartProductList from './components/CartProductList';
@@ -10,8 +9,9 @@ function App() {
   <div className="App">
      <HeaderComp/>
   <Routes>
-    <Route path='/' element={<ProductList/>}/>
-    <Route path='/cart' element={<CartProductList/>}/>
+    <Route path='product' element={<ProductList/>}/>
+    <Route path='cart' element={<CartProductList/>}/>
+    <Route path='/*' element={<ProductList/>}/>
   </Routes>
     </div>
     </BrowserRouter>

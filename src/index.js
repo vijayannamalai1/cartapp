@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import DataContext, { DataProvider } from './context/DataContext';
-
-//My Code
+import { DataProvider } from './context/DataContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
