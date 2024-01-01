@@ -36,10 +36,11 @@ const CartProductList = () => {
              
              <div className='checkoutdiv'>
                 <p>Total items: {totalItems}</p>
-                <p>Total Price: {(totalPrice).toFixed(2)} INR</p>
+                <p>Total Price: <span style={{whiteSpace:'nowrap'}}>{(totalPrice).toFixed(2)}</span> INR</p>
              </div>
              
              )}
+             <br/><br/>
     </div>
   )
 }

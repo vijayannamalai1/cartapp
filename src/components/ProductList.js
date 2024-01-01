@@ -14,6 +14,7 @@ const ProductList = () => {
             )
             )}
                </div>
+               <br/>
     </div>
   )
 }
